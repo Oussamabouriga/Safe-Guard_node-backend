@@ -7,6 +7,7 @@ const trajetSecurise = new mongoose.Schema({
         ref: 'User'
     },
     latitudeDeZoneDanger: Number,
-    longitudeDeZoneDanger: Number
+    longitudeDeZoneDanger: Number,
+    etat: Boolean,
 });
 module.exports = mongoose.model('trajetSecurise', trajetSecurise);
