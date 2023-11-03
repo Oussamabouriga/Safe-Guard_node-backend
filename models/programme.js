@@ -1,8 +1,9 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const programme = new mongoose.Schema({
-    Titre: String,
-    descriptionProgramme: String,
-    image : String,
+  Titre: String,
+  descriptionProgramme: String,
+  image: String,
 });
-module.exports = mongoose.model('Programme', programme);
+
+export const Programme = mongoose.model("Programme", programme);
